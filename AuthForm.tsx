@@ -7,9 +7,9 @@ export default function AuthForm() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setLoading(true);
     
-    const formData = new FormData(e.currentTarget);
+   `const data = Object.fromEntries(formData.entries())`
+    
     const data = Object.fromEntries(formData.entries());
     
     try {
